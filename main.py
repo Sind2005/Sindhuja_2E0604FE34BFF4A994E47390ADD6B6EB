@@ -1,9 +1,10 @@
-def leapyear(year):
-  if(year % 400 == 0) and (year % 1000 == 0):
-    print("{0} is a leap year".format(year))
-  elif(year % 4 ==0)and(year % 100 != 0):
-    print("{0} is a leap year".format(year))
-  else:
-    print("{0} is not a leap year".format(year))
-year=int(input("enter the year : "))
-leapyear(year)
+
+
+def factorial(n):
+    if (n==1 or n==0):
+        return 1
+    else:
+        return (n * factorial(n - 1))
+num = int(input("Enter the number to find factorial : "))
+print("Factorial : ",factorial(num))
+ 
